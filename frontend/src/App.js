@@ -19,6 +19,7 @@ import Navbar from './Components/Utilities/Navbar';
 import { getUserToken } from "./lib/APIs/usersApi";
 import PrivateAdminOutlet from "./Components/Admin/PrivateAdminOutlet";
 import AdminLogin from "./Components/Admin/AdminLogin";
+import NotFoundPage from "./Components/NotFoundPage";
 
 function App() {
   const [petsList, setPetsList] = useState([]);
@@ -42,9 +43,8 @@ function App() {
         <PersonalPetsContext.Provider value={{ savedPetsList, setSavedPetsList, myPetsList, setMyPetsList }}>
           <BrowserRouter>
             <Navbar position="fixed" />
-            <div>
               <Routes>
-                {/* <Route path='*' element={<NotFound />} /> */} {/* 404 Page */}
+                <Route path='*' element={<NotFoundPage />} />
                 <Route index path="/" element={<LandingPage />} />
                 <Route path="/search" element={<SearchPage />} />
                 <Route path="/home" element={<PrivateOutlet />}>
@@ -64,7 +64,6 @@ function App() {
                     <Route path="editpet" element={<PetsToEdit />}/>
                 </Route>
               </Routes>
-            </div>
           </BrowserRouter>
         </PersonalPetsContext.Provider>
       </AppContext.Provider>

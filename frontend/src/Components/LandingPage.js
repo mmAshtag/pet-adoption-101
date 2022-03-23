@@ -7,9 +7,9 @@ function LandingPage() {
   return (
           <div style={{
               backgroundImage: `url(${Puppy})`,
-              height: "100vh",
+              height: "100%",
               backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
+              backgroundSize: "cover"
             }}>
             <div className="welcomeHeadingsContainer">
               <Box className="welcomeHeadings">
