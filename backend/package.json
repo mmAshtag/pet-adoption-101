@@ -1,5 +1,5 @@
 {
-  "name": "fs_pet_adoption_be-mmashtag",
+  "name": "pet_adoption_be",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,16 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/israeltechchallenge/fs_pet_adoption_be-mmAshtag.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/israeltechchallenge/fs_pet_adoption_be-mmAshtag/issues"
-  },
-  "homepage": "https://github.com/israeltechchallenge/fs_pet_adoption_be-mmAshtag#readme",
   "dependencies": {
     "@nearform/sql": "^1.9.0",
     "ajv": "^8.8.2",
